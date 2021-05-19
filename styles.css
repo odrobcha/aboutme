@@ -72,7 +72,7 @@ body{
     align-items: center;
 }
 
-.color img{
+.color img, table img{
     width: 60px
 }
 .checkbox-label {
