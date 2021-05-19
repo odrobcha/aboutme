@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oksana Drobchak</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="photo-block border-out" >
+			<img class="photo" src="img/OksanaDrobchak.jpg" alt="Oksana Drobchak">
+			<h1 class="name">Oksana </br>Drobchak</h1>
+			<h1 class="about-me">I am optimistic all the time</h1>
+		</div>
+
+		<div class="quote border-out">
+			<h2>Success is the sum of small efforts </br>
+				repeated day in and day out
+			</h2>
+		</div>
+
+		<div class="my-data border-out">
+			<h2>Birth Day: 29/06/1984</h2>
+
+			<div class="color">
+
+					<h2>Favorite Color:</h2>
+
+
+				<img src="img/green.svg" alt="green">
+			</div>
+			<div class="food">
+				<h2>My favorite Food</h2>
+
+				<div class="food-item checkbox-wrapper">
+
+					<label class="checkbox-label">
+						<input	type='checkbox' id="food1" name="food1" value="pizza">
+						<span class="checkbox-custom"></span>
+					</label>
+					<h3> Pizza</h3>
+				</div>
+				<div class="food-item checkbox-wrapper">
+
+					<label class="checkbox-label">
+						<input	type='checkbox' id="food2" name="food2" value="strawberry">
+						<span class="checkbox-custom"></span>
+					</label>
+					<h3>Strawberry</h3>
+				</div>
+				<div class="food-item checkbox-wrapper">
+
+					<label class="checkbox-label">
+						<input	type='checkbox' id="food3" name="food3" value="sea food">
+						<span class="checkbox-custom"></span>
+					</label>
+					<h3>Sea Food</h3>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="hobby border-out">
+			<h3>Hobbies</h3>
+			<ul>
+				<li>Books
+					<ul>
+						<li>History</li>
+						<li>Science</li>
+						<li>Photography</li>
+					</ul>
+
+				</li>
+				<li>
+					Create handmade traditional clothes
+				</li>
+				<li>
+					Visit old castles
+				</li>
+
+			</ul>
+
+		</div>
+		<div class="count-on-me border-out">
+			<h4> You can always count in me when:</h4>
+			<ul>
+				<li>
+					you need an advice or help, I will do my best to help
+				</li>
+				<li>
+					you need to get portion of optimism
+				</li>
+				<li>
+					if you need some joke to refresh your mind
+				</li>
+			</ul>
+		</div>
+		<div class="funny-story border-out">
+			<h5>
+				Funny story
+			</h5>
+
+					<h5>
+						Once I was talking to the professor from England (but I did know him). He was speaking very native English, so I did not understand him at all, I decided he was speaking Dutch. Thus my answer was: "Sorry, could, you speak English, please?" :)
+					</h5>
+
+		</div>
+		<div class="joke border-out">
+			<h6>
+				<strong>Joke</strong></br>
+
+
+				There are two types of people in the world: </br>
+				1. those who can not extrapolate from incomplete data sets
+
+			</h6>
+		</div>
+		<div class="footer border-out">
+			<a class="footer-item arrow border-out" href="#"><<</a>
+			<h3 class="footer-item border-in">Oksana Drobchak</h3>
+			<a class="footer-item arrow border-out"  href="#"> >></a>
+		</div>
+	</div>
+
+
+</body>
+<script>
+	let arrows = document.getElementsByClassName("arrow");
+	for (let i=0; i<arrows.length; i++){
+	    arrows[i].addEventListener("mousedown", function(){
+            this.classList.remove("border-out");
+            this.classList.add("border-in");
+	    });
+        arrows[i].addEventListener("mouseup", function(){
+            this.classList.remove("border-in");
+            this.classList.add("border-out");
+        })
+
+	}
+</script>
+</html>
